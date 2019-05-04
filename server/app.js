@@ -4,7 +4,7 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
-mongoose.connect(process.envMONGODB_LOC);
+mongoose.connect(process.env.MONGODB_URI);
 mongoose.Promise = Promise;
 
 const app = express();
